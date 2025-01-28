@@ -11,7 +11,7 @@ def create_database():
             cusor=connection.cusor()
             cusor.execute=("CREATE DATABASE IF NOT EXISTS alx_book_store")
             print("Database 'alx_book_store' created successfully!")
-    except KeyError as e :
+    except mysql.connector.Error as e :
         print(F"{e}")
     finally:
         if connection.is_connected():
