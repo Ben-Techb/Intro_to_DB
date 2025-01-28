@@ -1,2 +1,2 @@
 USE alx_book_store;
-SELEECT*FROM books;
+SELECET book_id, title,author_id, price, pulication_date FROM books;
